@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.stylish-color-dark {
+			background: url(https://pngimg.com/uploads/lemon/lemon_PNG25205.png) no-repeat;
+			background-size: contain;
+			width: 980px;
+			height: 1000px;
+			position: relative;
+		}
+	.eyes {
+		  position: absolute;
+		  top: 30%;
+		  transform: translateY(-50%);
+		  width: 100%;
+		  text-align: center;
+		}
+
+		.eye {
+		  width: 240px;
+		  height: 120px;
+		  background: yellow;
+		  display: inline-block;
+		  margin: 40px;
+		  border-radius: 50%;
+		  position: relative;
+		  overflow: hidden;
+		}
+
+		.ball {
+		  width: 50px;
+		  height: 50px;
+		  background: #000;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+	  transform: translate(-50%, -50%);
+	  border-radius: 50%;
+	  border: 10px solid #333;
+	}
+	.gubi {
+		position: absolute;
+		width: 300px;
+		height: 150px;
+		object-fit: contain;
+		top: 50%;
+		right: 40%;
+	}
+	.left {
+		position: absolute;
+		
+		top: 5%;
+		left: 20%;
+	}
+	.right {
+		position: absolute;
+		top: 5%;
+		right: 20%;
+		transform: scale(-1, 1);
+	}
+	</style>
+</head>
+<body>
+	<div class="stylish-color-dark">
+	  <div class="eyes">
+	    <div class="eye">
+	      <div class="ball"></div>
+	    </div>
+	    <div class="eye">
+	      <div class="ball"></div>
+	    </div>
+	  </div>
+	  <img src="https://pngicon.ru/file/uploads/guby-1.png" class="gubi" alt="">
+	  <img src="https://i.siteapi.org/GtoahF3P7CUb94mYLTbBgNiWA7Q=/0x0:1024x788/fit-in/250x190/center/top/filters:fill(transparent):format(png)/fd1feab3e6d046c.s2.siteapi.org/img/11jv3f693d748okoscwkokg4wwg8og" class="left"> <img src="https://i.siteapi.org/GtoahF3P7CUb94mYLTbBgNiWA7Q=/0x0:1024x788/fit-in/250x190/center/top/filters:fill(transparent):format(png)/fd1feab3e6d046c.s2.siteapi.org/img/11jv3f693d748okoscwkokg4wwg8og" class="right">
+	</div>
+	<script>
+		const balls = document.getElementsByClassName("ball");
+document.onmousemove = function() {
+  let x = event.clientX * 100 / window.innerWidth + "%";
+  let y = event.clientY * 100 / window.innerHeight + "%";
+  // event.cilentX => get the horizontal coordinate of the mouse
+  // event.cilentY => get the vertical coordinate of the mouse
+  // window.innerWidth => get the browser width
+  // window.innerHeight => get the browser height
+
+  for(let i = 0; i < 2; i++) {
+    balls[i].style.left = x;
+    balls[i].style.top = y;
+    balls[i].style.transform = "translate(-"+x+", -"+y+")";
+  }
+}
+	</script>
+</body>
+</html>
