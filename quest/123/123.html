@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Second</title>
+	<style>
+		div {
+			display: flex;
+			width: 50%;
+			margin: 300px auto;
+			justify-content: center;
+			flex-direction: column;
+		}
+		h1 {
+			font-family: 'Inter', sans-serif;
+			font-weight: 900;
+		}
+	
+		img {
+			width: 600px;
+			height: 600px;
+			position: absolute;
+			top: 100px;
+		}
+		h1 {
+			margin-left: 3rem;
+			margin-top: 5rem;
+		}
+		p {
+			position: absolute;
+			transform: translate(-50%,-50%);
+			top: 50%;
+			left: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h3>CODDY</h3>
+	<h1>Сколько курсов в нашей школе?</h1>
+	<p class="value"><input type="range" id="myinput"/></p>
+	<script>
+			let input = document.querySelector('#myinput')
+			input.addEventListener('change', function (element) {
+				console.log(input.value)
+			  if (input.value == 97) {
+		    		let qr = document.createElement('img')
+					qr.id = 'content'
+					qr.src = '../images/qrcode.png'
+					document.body.appendChild(qr)
+			  }
+			});
+		</script>
+</body>
+</html>
