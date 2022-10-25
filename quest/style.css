@@ -1,0 +1,47 @@
+:root {
+	--color-orange: #DC5F00;
+	--color-red: #FF0000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	background: black;
+	color: white;
+	overflow: hidden;
+
+}
+@font-face {
+  font-family: "ScaryHalloweenFont";
+  src:  url("ScaryHalloweenFont.ttf") format("truetype"); 
+       /* Если браузер не поддерживает woff2, загрузит woff */
+}
+@font-face {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src:  url("fredoka_one.woff") format("woff"), url("fredoka_one.woff2") format("woff2"); 
+
+
+       /* Если браузер не поддерживает woff2, загрузит woff */
+}
+h3 {
+	font-family: Fredoka;
+	font-size: 2rem;
+	color: var(--color-orange);
+	position: absolute;
+	top: 2rem;
+	left: 3rem;
+}

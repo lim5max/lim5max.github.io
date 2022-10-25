@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			padding: 5vh;
+		}
+		h1 {
+			font-family: ScaryHalloweenFont ;
+			color: white;
+			font-size: 7rem;
+			text-transform: uppercase;
+			text-shadow: -5px -5px var(--color-red), 5px 5px var(--color-orange);
+		}
+		div {
+			position: absolute;
+			right: 0;
+			max-width: 1200px;
+			z-index: -1;
+			animation: move 5s 0.1s ease-in-out infinite;
+		}
+		a {
+			position: absolute;
+			bottom: 5vh;
+			left: 5vh;
+			color: black;
+		}
+		@keyframes move {
+			from {
+				transform: translate(0%, 0%);
+			}
+			25% {
+				transform: translate(2%, 6%);
+			}
+			50% {
+				transform: translate(4%, 2%) ;
+			}
+			75% {
+				transform: translate(-2%, -4%) ;
+			}
+			to{
+				transform: translate(0%, 0%) ;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h3>CODDY</h3>
+	<h1>halloween</h1>
+	<div>
+		<img src="images/index.png" alt="">
+	</div>
+	<a href="second.html">link</a>
+</body>
+</html>
