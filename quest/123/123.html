@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../style.css">
 	<title>Second</title>
 	<style>
+
 		div {
 			display: flex;
 			width: 50%;
@@ -31,13 +32,31 @@
 		p {
 			position: absolute;
 			transform: translate(-50%,-50%);
-			top: 50%;
+			top: 40%;
 			left: 50%;
+		}
+		.web {
+			position: absolute;
+			width: 20vw;
+			height: 40vh;
+			right: -100px;
+			top: -20px;
+		}
+		.bag {
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			top: 40vh;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -2;
 		}
 	</style>
 </head>
 <body>
 	<h3>CODDY</h3>
+	<img class="web" src="../images/web.png" alt="">
+	<img class="bag" src="../images/bag.png" alt="">
 	<h1>Сколько курсов в нашей школе?</h1>
 	<p class="value"><input type="range" id="myinput"/></p>
 	<script>
