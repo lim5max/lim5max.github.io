@@ -39,31 +39,47 @@ h3 {
 	top: 2rem;
 	left: 3rem;
 }
-		div {
-			display: flex;
-			width: 50%;
-			margin: 300px auto;
-			justify-content: center;
-			flex-direction: column;
-		}
-		h1 {
-			font-family: 'Inter', sans-serif;
-			font-weight: 900;
-			text-align: center;
-		}
+div {
+	display: flex;
+	width: 50%;
+	margin: 100px auto;
+	justify-content: center;
+	flex-direction: column;
+}
+h1 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 900;
+	text-align: center;
+}
+span {
+	color: transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 	</style>
 </head>
 <body>
 	<h3>CODDY</h3>
 	<div>
-	<h1>
-	Когда на свой праздник они собираются<br>
-	То совсем не наряжаются<br>
-	Лохматые и ужасные<br>
-	Всю ночь на горе скачут<br>
-	Воют, кричат, о планах коварных судачат.<br>
-	</h1>
+		<img src="4.png" alt="">
+		<span>ykkgj://czd5dro.xzkyls.zf/hlvjk/wzezjyyyyy.ykdc</span>
 	</div>
+<script>	
+	function disableselect(e) {
+	    return false;
+	}
 
+	function reEnable() {
+	    return true;
+	}
+
+	document.onselectstart = new Function("return false");
+
+	if (window.sidebar) {
+	    document.onmousedown = disableselect;
+	    document.onclick = reEnable;
+	}
+</script>
 </body>
 </html>
