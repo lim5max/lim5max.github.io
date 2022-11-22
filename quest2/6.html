@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		form {
+			max-width: 90%;
+
+		}
+		p {
+			font-size: 1.8rem;
+			font-weight: bold;
+		}
+		label {
+			font-size: 1.1rem;
+		}
+		form > div {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		form > div > div {
+			display: flex;
+			align-items: center;
+			margin: 1rem 0;
+		}
+		input[type="radio"] {
+			margin-right: 0.5rem;
+			width: 1rem;
+			height: 1rem;
+		}
+		input[type="submit"] {
+			font-weight: bold;
+			font-size: 1.1rem;
+			margin-top: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<p>Какова миссия CODDY?</p>
+		<div>
+			<div>
+				<input type="radio" id="contactChoice1"
+	           name="contact" value="1">
+		 		<label for="contactChoice1">Продвигать знания в области науки и технологий, которые наилучшим образом послужат стране и миру в XXI веке</label>
+		    </div>
+		    <div>
+			    <input type="radio" id="contactChoice2"
+			           name="contact" value="2">
+			    <label for="contactChoice2">Помогать людям решать задачи и достигать своих целей в жизни</label>
+			</div>
+			<div>
+			    <input type="radio" id="contactChoice3"
+			           name="contact" value="3">
+			    <label for="contactChoice3">Качественное IT-образование для школьников по всей России</label>
+			</div>
+	    </div>
+	    <input type="submit" value="Ответить">
+		<span class="coddy">CODDY</span>
+
+	</form>
+	<script>
+		var form = document.querySelector("form");
+		form.addEventListener("submit", function(event) {
+		  var data = new FormData(form);
+		  var output = "";
+		  for (const entry of data) {
+		    output = entry[1];
+		  };
+		  console.log(output)
+		  if (output == '1') {
+		  	window.location.assign('file:///C:/Users/farbx/Desktop/move/last.html')
+		  }
+		  event.preventDefault();
+		}, false);
+	</script>	
+</body>
+</html>

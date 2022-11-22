@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+	<style>
+		p {
+			font-size: 1.8rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<p>Сколько курсов в нашей школе?</p>
+	<input type="text">
+	<span class="coddy">CODDY</span>
+	<script>
+		document.querySelector('input').addEventListener('keyup', (e)=> {
+			console.log(e.target.value)
+			if (e.code = 'enter' && e.target.value.toLowerCase() == '97') {
+				window.location.assign('file:///C:/Users/farbx/Desktop/move/fifth.html')
+			}
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>	
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		p {
+			font-size: 1.8rem;
+			font-weight: bold;
+			margin:2rem;
+		}
+	</style>	
+</head>
+<body>
+	<p>?YDDOC ароткерид и ялетивонходв огонйеди тувоз каК</p>
+	<input type="text">
+	<script>
+		document.querySelector('input').addEventListener('keyup', (e)=> {
+			console.log(e.target.value)
+			if (e.code = 'enter' && (e.target.value.toLowerCase() === 'Селендеева Оксана Николаевна'.toLowerCase() || 
+				e.target.value.toLowerCase() === 'Оксана Селендеева Николаевна'.toLowerCase() ||
+				e.target.value.toLowerCase() === 'Николаевна Оксана Селендеева '.toLowerCase() )) {
+				window.location.assign('file:///C:/Users/farbx/Desktop/move/3.html')
+			}
+		})
+	</script>
+</body>
+</html>
