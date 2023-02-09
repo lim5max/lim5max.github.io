@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			p {
+				font-size: 1.8rem;
+				font-weight: bold;
+				margin: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<p>(GNE) ?етенретни в (уппург)ареках огонрялупоп огомас тувоз каК</p>
+		<input type="text" />
+		<script>
+			document.querySelector("input").addEventListener("keydown", (e) => {
+				console.log(e);
+				if (
+					e.key == "Enter" &&
+					e.target.value.toLowerCase() === "ANONYMOUS".toLowerCase()
+				) {
+					console.log(true);
+					window.location.assign(
+						"https://lim5max.github.io/quest2/3.html"
+					);
+				}
+			});
+		</script>
+	</body>
+</html>

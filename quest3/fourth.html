@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+		<style>
+			p {
+				font-size: 1.8rem;
+				font-weight: bold;
+				margin-bottom: 1rem;
+			}
+			input {
+				max-width: 400px;
+				min-width: 100%;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Сколько пользовательских аккаунтов Facebook было слито в сеть?
+			*Cамое большое число, записать цифру в миллиардах
+		</p>
+		<input type="text" placeholder="к примеру: 4.412 или 0.5" />
+		<span class="coddy">CODDY</span>
+		<script>
+			document.querySelector("input").addEventListener("keyup", (e) => {
+				console.log(e.target.value);
+				if (
+					(e.code = "enter" && e.target.value.toLowerCase() == "1.5")
+				) {
+					window.location.assign(
+						"https://lim5max.github.io/quest2/fifth.html"
+					);
+				}
+			});
+		</script>
+	</body>
+</html>
