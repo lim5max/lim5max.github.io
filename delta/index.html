@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="dist/output.css" />
 		<style></style>
 	</head>
-	<body>
+	<body class="pb-4">
 		<div
 			class="absolute flex items-center justify-center h-screen px-[5px] py-[10px] max-w-screen w-screen overflow-hidden top-0 left-0 z-[10000] bg-[#252525] hidden"
 			id="menu"
@@ -24,17 +24,17 @@
 			>
 				<a
 					href="/company.html"
-					class="text-[32px] tracking-[-1.6px] leading-[100%]"
+					class="text-[32px] sm:text-[55px] sm:tracking-[-2.75px] tracking-[-1.6px] leading-[100%]"
 					>О компании</a
 				>
 				<a
 					href="/hire.html"
-					class="text-[32px] tracking-[-1.6px] leading-[100%]"
+					class="text-[32px] sm:text-[55px] sm:tracking-[-2.75px] tracking-[-1.6px] leading-[100%]"
 					>Карьера</a
 				>
 				<a
 					href="/contacts.html"
-					class="text-[32px] tracking-[-1.6px] leading-[100%]"
+					class="text-[32px] sm:text-[55px] sm:tracking-[-2.75px] tracking-[-1.6px] leading-[100%]"
 					>Контакты</a
 				>
 			</div>
@@ -43,42 +43,88 @@
 				id="call_menu"
 				class="absolute bottom-[30px] w-full px-[10px]"
 				><button
-					class="w-full py-[20px] flex items-center justify-center text-black bg-yellow text-[16px] tracking-[-0.48px]"
+					class="w-full sm:max-w-[320px] m-auto py-[20px] flex items-center justify-center text-black bg-yellow text-[16px] tracking-[-0.48px]"
 				>
 					Связаться с нами
 				</button></a
 			>
 		</div>
-		<main class="relative min-h-[568px]">
-			<div class="h-full">
+		<main class="relative min-h-[568px] sm:min-h-[800px] xl:h-screen">
+			<img
+				src="img/main.jpg"
+				alt="main image"
+				class="hidden xl:block xl:absolute z-[-100] top-0 left-0 object-cover h-full w-screen"
+			/>
+			<div class="h-full xl:hidden">
 				<img
 					src="img/main.jpg"
 					alt="main image"
-					class="absolute z-[-100] top-0 left-0 min-h-[568px] object-cover"
+					class="absolute z-[-100] top-0 left-0 min-h-[568px] object-cover sm:h-full"
 				/>
 			</div>
 
-			<header class="px-[10px] py-[15px] w-full">
+			<header
+				class="px-[10px] py-[15px] sm:py-[20px] lg:px-[12px] w-full"
+			>
 				<nav class="flex justify-between w-full">
-					<a href="/"><img src="img/logo.png" alt="logo" /></a>
+					<div class="flex items-center gap-[15px]">
+						<a href="/"><img src="img/logo.png" alt="logo" /></a>
+						<span
+							class="h-[30px] hidden sm:block w-[1px] bg-light_gray relative"
+						></span>
+						<p
+							class="hidden sm:block text-[16px] tracking-[-0.32px] leading-[110%] text-white"
+						>
+							Consulting group
+						</p>
+					</div>
+					<div class="hidden lg:flex gap-[40px] items-center">
+						<div class="flex gap-[30px]">
+							<a
+								href="/company.html"
+								class="text-[16px] text-white leading-[110%] tracking-[-0.32px]"
+								>О компании</a
+							>
+							<a
+								href="/hire.html"
+								class="text-[16px] text-white leading-[110%] tracking-[-0.32px]"
+								>Карьера</a
+							>
+						</div>
+						<a
+							href="/contacts.html"
+							class="text-[16px] text-white leading-[110%] tracking-[-0.32px] py-[6px] px-[40px] border-x-[1px] border-solid border-lines"
+							>Контакты</a
+						>
+						<a
+							href="#form"
+							class="border-[1px] border-white text-[16px] text-white leading-[110%] tracking-[-0.32px] py-[15px] px-[34px]"
+							>Связаться с нами</a
+						>
+					</div>
 					<img
 						src="img/burger.svg"
 						alt="menu open"
-						class="block cursor-pointer"
+						class="block cursor-pointer lg:hidden"
 						id="humburger"
 					/>
 				</nav>
-				<div class="h-[1px] w-full mt-[15px] bg-white"></div>
+				<div
+					class="h-[1px] w-full mt-[15px] lg:mt-[20px] bg-white"
+				></div>
 			</header>
-			<section class="mt-[130px] mx-[10px]">
+			<section
+				class="mt-[130px] lg:mt-[60px] sm:mt-[134px] mx-[10px] sm:mx-[20px] lg:mx-[12px]"
+			>
 				<h1
-					class="text-[32px] tracking-[-1.6px] font-normal leading-none text-white"
+					class="text-[32px] xl:max-w-[1000px] sm:text-[55px] sm:tracking-[-2.75px] lg:text-[76px] lg:tracking-[-3.8px] tracking-[-1.6px] font-normal leading-[100%] text-white"
 				>
-					Решаем срочные <br />и сложные вопросы <br />владельцев
-					компаний <br />и топ-менеджеров
+					Решаем срочные <br class="sm:hidden" />и сложные вопросы
+					<br class="sm:hidden" />владельцев компаний
+					<br class="sm:hidden" />и топ-менеджеров
 				</h1>
 				<p
-					class="mt-[15px] text-[15px] tracking-[-0.3px] leading-[120%] text-white"
+					class="mt-[15px] lg:mt-[30px] sm:mt-[20px] text-[15px] sm:text-[18px] sm:tracking-[-0.36px] lg:text-[24px] lg:tracking-[-0.48px] tracking-[-0.3px] leading-[120%] text-white"
 				>
 					Создаём новые бизнесы и реализуем <br />крупные
 					преобразования. Инвестируем<br />
@@ -86,85 +132,109 @@
 				</p>
 			</section>
 		</main>
-		<section class="mt-[80px] text-black px-[10px]">
-			<h2 class="text-[26px] tracking-[-1.3px] leading-[110%]">
+		<section
+			class="mt-[80px] sm:mt-[100px] text-black px-[10px] sm:px-[20px] lg:px-[12px]"
+		>
+			<h2
+				class="text-[26px] sm:text-[36px] sm:tracking-[-1.8px] lg:text-[50px] lg:tracking-[-2.5px] tracking-[-1.3px] leading-[110%]"
+			>
 				Решения и услуги
 			</h2>
-			<div class="mt-[25px] flex flex-col gap-[20px]">
-				<div class="flex flex-col">
-					<p
-						class="text-[14px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
-					>
-						01/
-					</p>
-					<h3
-						class="mt-[10px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
-					>
-						Управленческий консалтинг
-					</h3>
+			<div
+				class="hidden sm:block bg-lines w-full h-[1px] mt-[30px] lg:mt-[40px]"
+			></div>
+
+			<div
+				class="mt-[25px] sm:mt-[30px] flex flex-col gap-[20px] lg:gap-[16px] sm:grid sm:grid-cols-2 sm:grid-flow-row sm:auto-rows-max sm:grid-rows-3"
+			>
+				<div class="flex flex-col sm:justify-between">
+					<div>
+						<p
+							class="text-[14px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+						>
+							01/
+						</p>
+						<h3
+							class="mt-[10px] xl:text-[24px] xl:tracking-[-0.48px] sm:mt-[15px] sm:text-[20px] sm:tracking-[-0.4px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Управленческий консалтинг
+						</h3>
+					</div>
+					<div
+						class="bg-lines w-full h-[1px] mt-[20px] self-end"
+					></div>
+				</div>
+				<div class="flex flex-col sm:justify-between">
+					<div>
+						<p
+							class="text-[14px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+						>
+							02/
+						</p>
+						<h3
+							class="mt-[10px] xl:text-[24px] xl:tracking-[-0.48px] sm:mt-[15px] sm:text-[20px] sm:tracking-[-0.4px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Управление изменениями
+						</h3>
+					</div>
 					<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
 				</div>
-				<div class="flex flex-col">
-					<p
-						class="text-[14px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
-					>
-						02/
-					</p>
-					<h3
-						class="mt-[10px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
-					>
-						Управление изменениями
-					</h3>
+				<div class="flex flex-col sm:justify-between">
+					<div>
+						<p
+							class="text-[14px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+						>
+							03/
+						</p>
+						<h3
+							class="mt-[10px] xl:text-[24px] xl:tracking-[-0.48px] sm:mt-[15px] sm:text-[20px] sm:tracking-[-0.4px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Управление проблемными активами
+						</h3>
+					</div>
 					<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
 				</div>
-				<div class="flex flex-col">
-					<p
-						class="text-[14px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
-					>
-						03/
-					</p>
-					<h3
-						class="mt-[10px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
-					>
-						Управление проблемными активами
-					</h3>
+				<div class="flex flex-col sm:justify-between">
+					<div>
+						<p
+							class="text-[14px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+						>
+							04/
+						</p>
+						<h3
+							class="mt-[10px] xl:text-[24px] xl:tracking-[-0.48px] sm:mt-[15px] sm:text-[20px] sm:tracking-[-0.4px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Инвестиции <br />в совместные проекты
+						</h3>
+					</div>
 					<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
 				</div>
-				<div class="flex flex-col">
-					<p
-						class="text-[14px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
-					>
-						04/
-					</p>
-					<h3
-						class="mt-[10px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
-					>
-						Инвестиции <br />в совместные проекты
-					</h3>
+				<div
+					class="flex flex-col xl:text-[24px] xl:tracking-[-0.48px] sm:justify-between"
+				>
+					<div>
+						<p
+							class="text-[14px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+						>
+							05/
+						</p>
+						<h3
+							class="mt-[10px] xl:text-[24px] xl:tracking-[-0.48px] sm:mt-[15px] sm:text-[20px] sm:tracking-[-0.4px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Решение задач информационной, юридической и
+							IT-безопасности
+						</h3>
+					</div>
 					<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
 				</div>
-				<div class="flex flex-col">
+				<div class="flex flex-col sm:justify-between">
 					<p
-						class="text-[14px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
-					>
-						05/
-					</p>
-					<h3
-						class="mt-[10px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
-					>
-						Решение задач информационной, юридической и
-						IT-безопасности
-					</h3>
-					<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
-				</div>
-				<div class="flex flex-col">
-					<p
-						class="text-[14px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+						class="text-[14px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
 					>
 						06/
 					</p>
 					<h3
-						class="mt-[10px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+						class="mt-[10px] xl:text-[24px] xl:tracking-[-0.48px] sm:mt-[15px] sm:text-[20px] sm:tracking-[-0.4px] text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
 					>
 						Повышение операционной и организационной эффективности
 					</h3>
@@ -172,34 +242,179 @@
 				</div>
 			</div>
 		</section>
-		<section class="mt-[100px] text-black px-[10px]">
-			<h2 class="text-[26px] tracking-[-1.3px] leading-[110%]">
+		<section
+			class="mt-[100px] lg:mt-[120px] text-black px-[10px] sm:px-[20px] lg:px-[12px]"
+		>
+			<h2
+				class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+			>
 				Отраслевая экспертиза
 			</h2>
-			<div class="mt-[25px] overflow-hidden cursor-pointer">
+			<div class="hidden lg:grid lg:grid-cols-2 gap-[16px] mt-[40px]">
+				<div class="max-w-full w-full flex">
+					<img
+						src="img/features/Image (2).jpg"
+						class="object-cover max-w-full block w-1/2"
+						alt="feature2"
+					/>
+					<div
+						class="w-full bg-light_gray pt-[20px] pb-[40px] pl-[16px] sm:pb-[20px] sm:flex sm:flex-col sm:justify-between"
+					>
+						<h3
+							class="text-[18px] xl:text-[24px] xl:tracking-[-0.48px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							IT технологии и телекоммуникации
+						</h3>
+						<p
+							class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
+						>
+							Разработка и внедрение IT-стратегии развития бизнеса
+							для цифровой трансформации производственных и
+							управленческий процессов
+						</p>
+					</div>
+				</div>
+				<div class="max-w-full w-full flex">
+					<img
+						src="img/features/Image (3).jpg"
+						class="object-cover max-w-full block w-1/2"
+						alt="feature2"
+					/>
+					<div
+						class="w-full bg-light_gray pt-[20px] pb-[40px] pl-[16px] sm:pb-[20px] sm:flex sm:flex-col sm:justify-between"
+					>
+						<h3
+							class="text-[18px] xl:text-[24px] xl:tracking-[-0.48px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Транспорт и логистика
+						</h3>
+						<p
+							class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
+						>
+							Оптимизация функциональных областей логистики.
+							Минимизация издержек компании, связанных с доставкой
+							и перемещением грузов
+						</p>
+					</div>
+				</div>
+				<div class="max-w-full w-full flex">
+					<img
+						src="img/features/Image (4).jpg"
+						class="object-cover max-w-full block w-1/2"
+						alt="feature2"
+					/>
+					<div
+						class="w-full bg-light_gray pt-[20px] pb-[40px] pl-[16px] sm:pb-[20px] sm:flex sm:flex-col sm:justify-between"
+					>
+						<h3
+							class="text-[18px] xl:text-[24px] xl:tracking-[-0.48px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Банковская и финансовая сфера
+						</h3>
+						<p
+							class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
+						>
+							Получение объективной картины финансового состояния
+							компании, определение оптимальных путей развития и
+							оптимизации
+						</p>
+					</div>
+				</div>
+				<div class="max-w-full w-full flex">
+					<img
+						src="img/features/Image (5).jpg"
+						class="object-cover max-w-full block w-1/2"
+						alt="feature2"
+					/>
+					<div
+						class="w-full bg-light_gray pt-[20px] pb-[40px] pl-[16px] sm:pb-[20px] sm:flex sm:flex-col sm:justify-between"
+					>
+						<h3
+							class="text-[18px] xl:text-[24px] xl:tracking-[-0.48px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Строительство и девелопмент
+						</h3>
+						<p
+							class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
+						>
+							Рекомендации экспертов по эффективному решению задач
+							в ходе реализации проектов в сфере строительства,
+							девелопмента, управления недвижимостью
+						</p>
+					</div>
+				</div>
+				<div class="max-w-full w-full flex">
+					<img
+						src="img/features/Image (6).jpg"
+						class="object-cover max-w-full block w-1/2"
+						alt="feature2"
+					/>
+					<div
+						class="w-full bg-light_gray pt-[20px] pb-[40px] pl-[16px] sm:pb-[20px] sm:flex sm:flex-col sm:justify-between"
+					>
+						<h3
+							class="text-[18px] xl:text-[24px] xl:tracking-[-0.48px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Энергетика и промышленность
+						</h3>
+						<p
+							class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
+						>
+							Анализируем деятельность предприятий, разрабатываем
+							и успешно содействуем  в реализации комплексных
+							программ развития
+						</p>
+					</div>
+				</div>
+				<div class="max-w-full w-full flex">
+					<img
+						src="img/features/Image (7).jpg"
+						class="object-cover max-w-full block w-1/2"
+						alt="feature2"
+					/>
+					<div
+						class="w-full bg-light_gray pt-[20px] pb-[40px] pl-[16px] sm:pb-[20px] sm:flex sm:flex-col sm:justify-between"
+					>
+						<h3
+							class="text-[18px] xl:text-[24px] xl:tracking-[-0.48px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
+						>
+							Электронная коммерция и интернет-маркетинг
+						</h3>
+						<p
+							class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
+						>
+							Конструирование новых моделей и стратегий цифровой
+							коммерции, последующая разработка и реализация
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-[25px] sm:mt-[30px] overflow-hidden cursor-pointer">
 				<swiper-container
-					class="w-full h-full"
+					class="w-full h-full lg:hidden"
 					space-between="10"
 					slides-per-view="auto"
 					free-mode="true"
 					slidesOffsetAfter="0"
 				>
-					<swiper-slide class="max-w-[290px]">
+					<swiper-slide
+						class="max-w-[290px] sm:max-w-full sm:w-[calc(100%-30px)] sm:flex"
+					>
 						<img
 							src="img/features/Image (2).jpg"
-							class="object-cover max-w-full"
+							class="object-cover max-w-full sm:block sm:w-1/2"
 							alt="feature2"
 						/>
 						<div
-							class="w-full bg-light_gray pt-[20px] pb-[40px] px-[15px]"
+							class="w-full bg-light_gray pt-[20px] pb-[40px] sm:pb-[20px] px-[15px] sm:flex sm:flex-col sm:justify-between"
 						>
 							<h3
-								class="text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+								class="text-[18px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
 							>
 								IT технологии и телекоммуникации
 							</h3>
 							<p
-								class="text-[14px] mt-[10px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+								class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
 							>
 								Разработка и внедрение IT-стратегии развития
 								бизнеса для цифровой трансформации
@@ -207,23 +422,25 @@
 							</p>
 						</div>
 					</swiper-slide>
-					<swiper-slide class="max-w-[290px]">
+					<swiper-slide
+						class="max-w-[290px] sm:max-w-full sm:w-[calc(100%-30px)] sm:flex"
+					>
 						<img
 							src="img/features/Image (3).jpg"
-							class="object-cover max-w-full"
+							class="object-cover max-w-full sm:block sm:w-1/2"
 							alt="feature1"
 						/>
 						<div
-							class="w-full bg-light_gray pt-[20px] pb-[40px] px-[15px]"
+							class="w-full bg-light_gray pt-[20px] pb-[40px] sm:pb-[20px] px-[15px] sm:flex sm:flex-col sm:justify-between"
 						>
 							<h3
-								class="text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+								class="text-[18px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
 							>
 								Транспорт<br />
 								и логистика
 							</h3>
 							<p
-								class="text-[14px] mt-[10px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+								class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
 							>
 								Оптимизация функциональных областей логистики.
 								Минимизация издержек компании, связанных с
@@ -231,23 +448,25 @@
 							</p>
 						</div>
 					</swiper-slide>
-					<swiper-slide class="max-w-[290px]">
+					<swiper-slide
+						class="max-w-[290px] sm:max-w-full sm:w-[calc(100%-30px)] sm:flex"
+					>
 						<img
 							src="img/features/Image (4).jpg"
-							class="object-cover max-w-full"
+							class="object-cover max-w-full sm:block sm:w-1/2"
 							alt="feature3"
 						/>
 						<div
-							class="w-full bg-light_gray pt-[20px] pb-[40px] px-[15px]"
+							class="w-full bg-light_gray pt-[20px] pb-[40px] sm:pb-[20px] px-[15px] sm:flex sm:flex-col sm:justify-between"
 						>
 							<h3
-								class="text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+								class="text-[18px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
 							>
 								Банковская<br />
 								и финансовая сфера
 							</h3>
 							<p
-								class="text-[14px] mt-[10px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+								class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
 							>
 								Получение объективной картины финансового
 								состояния компании, определение оптимальных
@@ -255,23 +474,25 @@
 							</p>
 						</div>
 					</swiper-slide>
-					<swiper-slide class="max-w-[290px]">
+					<swiper-slide
+						class="max-w-[290px] sm:max-w-full sm:w-[calc(100%-30px)] sm:flex"
+					>
 						<img
 							src="img/features/Image (5).jpg"
-							class="object-cover max-w-full"
+							class="object-cover max-w-full sm:block sm:w-1/2"
 							alt="feature4"
 						/>
 						<div
-							class="w-full bg-light_gray pt-[20px] pb-[40px] px-[15px]"
+							class="w-full bg-light_gray pt-[20px] pb-[40px] sm:pb-[20px] px-[15px] sm:flex sm:flex-col sm:justify-between"
 						>
 							<h3
-								class="text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+								class="text-[18px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
 							>
 								Строительство<br />
 								и девелопмент
 							</h3>
 							<p
-								class="text-[14px] mt-[10px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+								class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
 							>
 								Рекомендации экспертов по эффективному решению
 								задач в ходе реализации проектов в сфере
@@ -280,23 +501,25 @@
 							</p>
 						</div>
 					</swiper-slide>
-					<swiper-slide class="max-w-[290px]">
+					<swiper-slide
+						class="max-w-[290px] sm:max-w-full sm:w-[calc(100%-30px)] sm:flex"
+					>
 						<img
 							src="img/features/Image (6).jpg"
-							class="object-cover max-w-full"
+							class="object-cover max-w-full sm:block sm:w-1/2"
 							alt="feature5"
 						/>
 						<div
-							class="w-full bg-light_gray pt-[20px] pb-[40px] px-[15px]"
+							class="w-full bg-light_gray pt-[20px] pb-[40px] sm:pb-[20px] px-[15px] sm:flex sm:flex-col sm:justify-between"
 						>
 							<h3
-								class="text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+								class="text-[18px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
 							>
 								Энергетика <br />
 								и промышленность
 							</h3>
 							<p
-								class="text-[14px] mt-[10px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+								class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
 							>
 								Анализируем деятельность предприятий,
 								разрабатываем и успешно содействуем в реализации
@@ -304,23 +527,25 @@
 							</p>
 						</div>
 					</swiper-slide>
-					<swiper-slide class="max-w-[290px]">
+					<swiper-slide
+						class="max-w-[290px] sm:max-w-full sm:w-[calc(100%-30px)] sm:flex"
+					>
 						<img
 							src="img/features/Image (7).jpg"
-							class="object-cover max-w-full"
+							class="object-cover max-w-full sm:block sm:w-1/2"
 							alt="feature6"
 						/>
 						<div
-							class="w-full bg-light_gray pt-[20px] pb-[40px] px-[15px]"
+							class="w-full bg-light_gray pt-[20px] pb-[40px] sm:pb-[20px] px-[15px] sm:flex sm:flex-col sm:justify-between"
 						>
 							<h3
-								class="text-[18px] font-medium tracking-[-0.36px] leading-[120%]"
+								class="text-[18px] sm:text-[20px] sm:tracking-[-0.4px] font-medium tracking-[-0.36px] leading-[120%]"
 							>
 								Электронная коммерция<br />
 								и интернет-маркетинг
 							</h3>
 							<p
-								class="text-[14px] mt-[10px] text-dark_gray font-semibold tracking-[-0.14px] leading-[120%]"
+								class="text-[14px] mt-[10px] sm:text-[16px] sm:tracking-[-0.16px] text-dark_gray tracking-[-0.14px] leading-[120%]"
 							>
 								Конструирование новых моделей и стратегий
 								цифровой коммерции, последующая разработка и
@@ -331,219 +556,268 @@
 				</swiper-container>
 			</div>
 		</section>
-		<section class="mt-[80px] text-black px-[10px]">
-			<h2 class="text-[26px] tracking-[-1.3px] leading-[110%]">
+		<section
+			class="mt-[80px] lg:mt-[120px] sm:mt-[100px] text-black px-[10px] sm:px-[20px] lg:px-[12px]"
+		>
+			<h2
+				class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+			>
 				О компании
 			</h2>
-			<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
-			<div class="mt-[20px]">
-				<h4
-					class="text-[50px] font-medium tracking-[-2.5px] leading-[110%]"
+			<div
+				class="bg-lines w-full h-[1px] mt-[20px] sm:mt-[30px] lg:mt-[40px]"
+			></div>
+			<div class="sm:grid sm:grid-cols-2 sm:mt-[25px] gap-[20px]">
+				<div class="sm:col-end-2 sm:col-start-1 lg:grid lg:grid-cols-2">
+					<div class="mt-[20px] sm:mt-0 lg:col-span-1 lg:gap-[16px]">
+						<h4
+							class="text-[50px] lg:text-[80px] lg:tracking-[-4px] font-medium tracking-[-2.5px] leading-[110%]"
+						>
+							160+
+						</h4>
+						<p
+							class="mt-[5px] lg:text-[24px] lg:tracking-[-0.48px] text-[15px] tracking-[-0.3px] leading-[120%] text-dark_gray"
+						>
+							проектов <br class="hidden lg:block xl:hidden" />
+							реализовано
+						</p>
+					</div>
+					<div
+						class="mt-[15px] lg:col-span-1 lg:mt-0 sm:mt-[20px] sm:col-end-2 sm:col-start-1"
+					>
+						<h4
+							class="text-[50px] lg:text-[80px] lg:tracking-[-4px] font-medium tracking-[-2.5px] leading-[110%]"
+						>
+							15+
+						</h4>
+						<p
+							class="mt-[5px] text-[15px] lg:text-[24px] lg:tracking-[-0.48px] tracking-[-0.3px] leading-[120%] text-dark_gray"
+						>
+							лет опыт работы экспертов
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="mt-[20px] sm:mt-0 sm:row-start-1 sm:row-end-2 sm:col-start-2"
 				>
-					160+
-				</h4>
-				<p
-					class="mt-[5px] text-[15px] tracking-[-0.3px] leading-[120%] text-dark_gray"
-				>
-					проектов реализовано
-				</p>
-			</div>
-			<div class="mt-[15px]">
-				<h4
-					class="text-[50px] font-medium tracking-[-2.5px] leading-[110%]"
-				>
-					15+
-				</h4>
-				<p
-					class="mt-[5px] text-[15px] tracking-[-0.3px] leading-[120%] text-dark_gray"
-				>
-					лет опыт работы экспертов
-				</p>
-			</div>
-			<div class="mt-[20px]">
-				<h5 class="text-[18px] tracking-[-0.5px] leading-[120%]">
-					Наша команда — это эксперты <br />с опытом руководства
-					компаниями, обладающие профессиональными знаниями и навыками
-					<br />в области создания, развития <br />и управления
-					бизнеса. Предлагаем экспертные решения по различным
-					аспектам, помогая компаниям достигать конкретных результатов
-				</h5>
-				<a
-					href="/contacts.html"
-					class="w-full mt-[25px] py-[20px] flex items-center justify-center text-black border-2 border-black text-[16px] tracking-[-0.48px]"
-					>Подробнее о компании</a
-				>
+					<h5
+						class="text-[18px] lg:text-[24px] lg:tracking-[-0.72px] tracking-[-0.5px] leading-[120%]"
+					>
+						Наша команда — это эксперты <br />с опытом руководства
+						компаниями, обладающие профессиональными знаниями и
+						навыками <br />в области создания, развития <br />и
+						управления бизнеса. Предлагаем экспертные решения по
+						различным аспектам, помогая компаниям достигать
+						конкретных результатов
+					</h5>
+					<a
+						href="/contacts.html"
+						class="w-full mt-[25px] lg:mt-[40px] py-[20px] flex items-center justify-center text-black border-2 border-black text-[16px] tracking-[-0.48px]"
+						>Подробнее о компании</a
+					>
+				</div>
 			</div>
 		</section>
-		<section class="mt-[100px] w-full bg-black text-white">
-			<div class="px-[10px] pt-[40px] pb-[50px]">
-				<h2 class="text-[26px] tracking-[-1.3px] leading-[110%]">
+		<section class="mt-[100px] lg:mt-[120px] w-full bg-black text-white">
+			<div
+				class="lg:grid lg:gap-[16px] lg:grid-cols-2 px-[10px] sm:px-[20px] lg:px-[12px] pt-[40px] lg:mt-[50px] pb-[50px]"
+			>
+				<h2
+					class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+				>
 					Обсудить <br />
 					сотрудничество
 				</h2>
-				<h5
-					class="mt-[25px] text-[18px] tracking-[-0.5px] leading-[120%]"
-				>
-					Контактные данные <br />для организации встречи
-				</h5>
-
-				<form
-					action=""
-					class="mt-[20px] flex flex-col gap-[20px] text-[14px] text-dark_gray tracking-[-0.28px] leading-[110%]"
-				>
-					<input
-						type="text"
-						class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
-						placeholder="Ваше имя*"
-					/>
-					<input
-						type="text"
-						class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
-						placeholder="Ваша фамилия*"
-					/>
-					<input
-						type="text"
-						class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
-						placeholder="Контактный телефон*"
-					/>
-					<input
-						type="email"
-						class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
-						placeholder="Адрес электронной почты*"
-					/>
-					<textarea
-						rows="1"
-						class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
-						placeholder="Суть вашего обращения*"
-					></textarea>
-					<div class="flex items-center gap-[10px]">
-						<input
-							type="checkbox"
-							value=""
-							id="checkbox"
-							name="checkbox"
-							class="block accent-form_text w-6 h-6 bg-black border-2 border-form_text"
-						/>
-						<label
-							for="checkbox"
-							class="text-[13px] tracking-[-0.26px] leading-[130%]"
-						>
-							Я согласен на обработку<br />
-							персональных данных</label
-						>
-					</div>
-					<button
-						class="w-full mt-[5px] py-[20px] flex items-center justify-center text-black bg-yellow border-2 text-[16px] tracking-[-0.48px]"
+				<div>
+					<h5
+						class="mt-[25px] lg:mt-0 sm:mt-[30px] lg:text-[30px] lg:tracking-[-0.9px] sm:text-[20px] sm:tracking-[-0.6px] text-[18px] tracking-[-0.5px] leading-[120%]"
 					>
-						Отправить заявку
-					</button>
-				</form>
+						Контактные данные <br />для организации встречи
+					</h5>
+
+					<form
+						action=""
+						id="form"
+						class="mt-[20px] sm:mt-[25px] lg:mt-[40px] sm:grid sm:grid-cols-2 sm:gap-x-[16px] sm:gap-y-[20px] flex flex-col gap-[20px] lg:gap-x-[16px] text-[14px] text-dark_gray tracking-[-0.28px] leading-[110%]"
+					>
+						<input
+							type="text"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Ваше имя*"
+							required
+						/>
+						<input
+							type="text"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Ваша фамилия*"
+							required
+						/>
+						<input
+							type="text"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Контактный телефон*"
+							required
+						/>
+						<input
+							type="email"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Адрес электронной почты*"
+							required
+						/>
+						<textarea
+							rows="1"
+							class="w-full sm:col-span-2 pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Суть вашего обращения*"
+							required
+						></textarea>
+						<div class="flex items-center sm:col-span-2 gap-[10px]">
+							<input
+								type="checkbox"
+								value=""
+								id="checkbox"
+								name="checkbox"
+								class="block accent-form_text w-6 h-6 bg-black border-2 border-form_text"
+							/>
+							<label
+								for="checkbox"
+								class="text-[13px] tracking-[-0.26px] leading-[130%]"
+							>
+								Я согласен на обработку<br class="sm:hidden" />
+								персональных данных</label
+							>
+						</div>
+						<button
+							class="w-full mt-[5px] lg:col-span-2 sm:col-span-1 sm:mt-[20px] py-[20px] flex items-center justify-center text-black bg-yellow border-2 text-[16px] tracking-[-0.48px]"
+						>
+							Отправить заявку
+						</button>
+					</form>
+				</div>
 			</div>
 		</section>
-		<section class="mt-[100px] w-full text-black px-[10px]">
-			<div class="bg-lines w-full h-[1px] mt-[20px]"></div>
-			<div class="mt-[30px] flex items-center gap-[15px] py-[5px]">
-				<img src="img/logo.png" alt="logo" class="" />
-				<span class="h-[30px] w-[1px] bg-black relative"></span>
-				<p
-					class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
+		<footer
+			class="mt-[100px] lg:mt-[120px] w-full text-black px-[10px] sm:px-[20px] lg:px-[12px]"
+		>
+			<div class="bg-lines w-full h-[1px]"></div>
+			<div class="lg:grid-cols-4 lg:grid lg:mt-[40px] gap-[16px]">
+				<div class="lg:col-span-2">
+					<div
+						class="mt-[30px] lg:mt-0 flex items-center gap-[15px] py-[5px]"
+					>
+						<img src="img/logo.png" alt="logo" class="" />
+						<span class="h-[30px] w-[1px] bg-black relative"></span>
+						<p
+							class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
+						>
+							Consulting group
+						</p>
+					</div>
+					<h5
+						class="text-[14px] lg:mt-[30px] lg:text-[16px] lg:tracking-[-0.32px] mt-[25px] text-black tracking-[-0.28px] leading-[110%]"
+					>
+						Россия, 123317, город Москва,<br />
+						Пресненская наб., д. 8, стр. 1, этаж 13
+					</h5>
+				</div>
+				<div
+					class="sm:mt-[30px] lg:mt-0 col-span-2 lg:grid lg:grid-cols-2 lg:gap-[16px] sm:grid sm:grid-cols-2 sm:gap-[20px]"
 				>
-					Consulting group
-				</p>
+					<div class="mt-[25px] sm:mt-0">
+						<h4
+							class="text-[14px] lg:text-[18px] lg:tracking-[-0.36px] sm:text-[16px] sm:tracking-[-0.32px] tracking-[-0.28px] leading-[120%] font-semibold"
+						>
+							Навигация
+						</h4>
+						<div class="flex flex-col mt-[15px] gap-[10px]">
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>О компании</a
+							>
+							<a
+								href="/hire.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>Карьера</a
+							>
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>Контакты</a
+							>
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>Связаться с нами</a
+							>
+						</div>
+					</div>
+					<div class="mt-[25px] sm:mt-0">
+						<h4
+							class="text-[14px] lg:text-[18px] lg:tracking-[-0.36px] sm:text-[16px] sm:tracking-[-0.32px] tracking-[-0.28px] leading-[120%] font-semibold"
+						>
+							Контакты
+						</h4>
+						<div class="flex flex-col mt-[15px] gap-[10px]">
+							<a
+								href="info@delta-deal.ru"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>info@delta-deal.ru</a
+							>
+							<p
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+							>
+								+7 (926) 010-8008
+							</p>
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+							>
+								Telegram
+							</a>
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>WhatsApp</a
+							>
+						</div>
+					</div>
+				</div>
 			</div>
-			<h5
-				class="text-[14px] mt-[25px] text-black tracking-[-0.28px] leading-[110%]"
+			<div class="bg-lines w-full h-[1px] mt-[25px] lg:mt-[40px]"></div>
+			<div
+				class="mt-[20px] sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-[20px] sm:gap-y-[15px] lg:gap-x-[16px]"
 			>
-				Россия, 123317, город Москва,<br />
-				Пресненская наб., д. 8, стр. 1, этаж 13
-			</h5>
-			<div class="mt-[25px]">
-				<h4
-					class="text-[14px] tracking-[-0.28px] leading-[120%] font-semibold"
-				>
-					Навигация
-				</h4>
-				<div class="flex flex-col mt-[15px] gap-[10px]">
-					<a
-						href="/company.html"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
-						>О компании</a
-					>
-					<a
-						href="/hire.html"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
-						>Карьера</a
-					>
-					<a
-						href="/company.html"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
-						>Контакты</a
-					>
-					<a
-						href="/company.html"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
-						>Связаться с нами</a
-					>
-				</div>
-			</div>
-			<div class="mt-[25px]">
-				<h4
-					class="text-[14px] tracking-[-0.28px] leading-[120%] font-semibold"
-				>
-					Контакты
-				</h4>
-				<div class="flex flex-col mt-[15px] gap-[10px]">
-					<a
-						href="info@delta-deal.ru"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
-						>info@delta-deal.ru</a
-					>
+				<div class="lg:col-span-1">
 					<p
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
+						class="text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
 					>
-						+7 (926) 010-8008
+						ООО “Дельта”. ИНН 9703133385
 					</p>
-					<a
-						href="/company.html"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
+					<p
+						class="mt-[5px] text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
 					>
-						Telegram
-					</a>
-					<a
-						href="/company.html"
-						class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
-						>WhatsApp</a
-					>
+						© Все права защищены. 2023
+					</p>
 				</div>
-			</div>
-			<div class="bg-lines w-full h-[1px] mt-[25px]"></div>
-			<div class="mt-[20px]">
 				<p
-					class="text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
-				>
-					ООО “Дельта”. ИНН 9703133385
-				</p>
-				<p
-					class="mt-[5px] text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
-				>
-					© Все права защищены. 2023
-				</p>
-				<p
-					class="mt-[15px] text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
+					class="mt-[15px] sm:mt-0 sm:order-3 text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
 				>
 					Политика конфиденциальности
 				</p>
-				<a
-					class="mt-[25px] block text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
-					>Дизайн сайта</a
-				>
-				<a
-					class="mt-[5px] block text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
-				>
-					Разработка сайта</a
-				>
+				<div class="lg:col-start-3">
+					<a
+						class="mt-[25px] sm:mt-0 block text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
+						>Дизайн сайта</a
+					>
+					<a
+						class="mt-[5px] block text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
+					>
+						Разработка сайта</a
+					>
+				</div>
 			</div>
-		</section>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 		<script>
 			let open = false;
