@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Delta consulting</title>
+		<link rel="stylesheet" href="dist/output.css" />
+	</head>
+	<body class="pb-4">
+		<div
+			class="absolute flex items-center justify-center h-screen px-[5px] py-[10px] max-w-screen w-screen overflow-hidden top-0 left-0 z-[10000] bg-[#252525] hidden"
+			id="menu"
+		>
+			<img
+				src="img/cross.svg"
+				alt="close"
+				id="close"
+				class="absolute right-[5px] top-[10px] cursor-pointer"
+			/>
+
+			<div
+				class="flex flex-col items-center text-white my-auto gap-[20px]"
+			>
+				<a
+					href="/company.html"
+					class="text-[32px] sm:text-[55px] sm:tracking-[-2.75px] tracking-[-1.6px] leading-[100%]"
+					>О компании</a
+				>
+				<a
+					href="/hire.html"
+					class="text-[32px] sm:text-[55px] sm:tracking-[-2.75px] tracking-[-1.6px] leading-[100%]"
+					>Карьера</a
+				>
+				<a
+					href="/contacts.html"
+					class="text-[32px] sm:text-[55px] sm:tracking-[-2.75px] tracking-[-1.6px] leading-[100%]"
+					>Контакты</a
+				>
+			</div>
+			<a
+				href="#form"
+				id="call_menu"
+				class="absolute bottom-[30px] w-full px-[10px]"
+				><button
+					class="w-full sm:max-w-[320px] m-auto py-[20px] flex items-center justify-center text-black bg-yellow text-[16px] tracking-[-0.48px]"
+				>
+					Связаться с нами
+				</button></a
+			>
+		</div>
+		<main class="relative min-h-[568px] sm:min-h-[800px] xl:h-screen">
+			<img
+				src="img/hire/main.jpg"
+				alt="main image"
+				class="hidden xl:block xl:absolute z-[-100] top-0 left-0 object-cover h-full w-screen"
+			/>
+			<div class="h-full xl:hidden">
+				<img
+					src="img/main.jpg"
+					alt="main image"
+					class="absolute z-[-100] top-0 left-0 min-h-[568px] object-cover sm:h-full"
+				/>
+			</div>
+
+			<header
+				class="px-[10px] py-[15px] sm:py-[20px] lg:px-[12px] xl:px-[60px] w-full"
+			>
+				<nav class="flex justify-between w-full">
+					<div class="flex items-center gap-[15px]">
+						<a href="/"><img src="img/logo.png" alt="logo" /></a>
+						<span
+							class="h-[30px] hidden sm:block w-[1px] bg-upper_line relative"
+						></span>
+						<p
+							class="hidden sm:block text-[16px] tracking-[-0.32px] leading-[110%] text-white"
+						>
+							Consulting group
+						</p>
+					</div>
+					<div class="hidden lg:flex gap-[40px] items-center">
+						<div class="flex gap-[30px]">
+							<a
+								href="/company.html"
+								class="text-[16px] text-white leading-[110%] tracking-[-0.32px]"
+								>О компании</a
+							>
+							<a
+								href="/hire.html"
+								class="text-[16px] text-white leading-[110%] tracking-[-0.32px]"
+								>Карьера</a
+							>
+						</div>
+						<a
+							href="/contacts.html"
+							class="text-[16px] text-white leading-[110%] tracking-[-0.32px] py-[6px] px-[40px] border-x-[1px] border-solid border-upper_line"
+							>Контакты</a
+						>
+						<a
+							href="#form"
+							class="border-[1px] border-white text-[16px] text-white leading-[110%] tracking-[-0.32px] py-[15px] px-[34px]"
+							>Связаться с нами</a
+						>
+					</div>
+					<img
+						src="img/burger.svg"
+						alt="menu open"
+						class="block cursor-pointer lg:hidden"
+						id="humburger"
+					/>
+				</nav>
+				<div
+					class="h-[1px] w-full mt-[15px] lg:mt-[20px] bg-upper_line"
+				></div>
+			</header>
+			<section
+				class="absolute bottom-[40px] sm:bottom-[60px] lg:bottom-[100px] mx-[10px] sm:mx-[20px] lg:mx-[12px] xl:mx-[60px]"
+			>
+				<h1
+					class="text-[32px] xl:max-w-[1000px] sm:text-[55px] sm:tracking-[-2.75px] lg:text-[76px] lg:tracking-[-3.8px] tracking-[-1.6px] font-normal leading-[100%] text-white"
+				>
+					Карьера
+				</h1>
+				<p
+					class="mt-[15px] lg:mt-[30px] sm:mt-[20px] text-[15px] sm:text-[18px] sm:tracking-[-0.36px] lg:text-[24px] lg:tracking-[-0.48px] tracking-[-0.3px] leading-[120%] text-white"
+				>
+					Мы активно развиваемся <br />и заинтересованы в
+					талантливых<br />
+					и креативных профессионалах <br />из различных отраслей и
+					сфер бизнеса
+				</p>
+			</section>
+		</main>
+
+		<section
+			class="mt-[80px] lg:mt-[120px] sm:mt-[100px] text-black px-[10px] sm:px-[20px] lg:px-[12px] xl:px-[60px]"
+		>
+			<h2
+				class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+			>
+				Работа в Delta Consulting
+			</h2>
+			<div
+				class="bg-lines w-full h-[1px] mt-[20px] sm:mt-[30px] lg:mt-[40px]"
+			></div>
+			<div
+				class="grid grid-cols-1 lg:grid-cols-2 lg:mt-[25px] gap-x-[10px] gap-y-[16px] lg:gap-x-[16px] xl:gap-x-[30px] mt-[20px]"
+			>
+				<img src="" alt="" class="object-cover col-span-1" />
+				<div>
+					<h5
+						class="text-[18px] xl:text-[30px] xl:tracking-[-0.9px] lg:text-[24px] lg:tracking-[-0.72px] tracking-[-0.5px] leading-[120%]"
+					>
+						Компания, в которой профессионализм и ответственность
+						являются ключевыми качествами наших сотрудников. Наш
+						коллектив объединён общей системой ценностей, которая
+						помогает выстраивать доверительные отношения с клиентами
+						и достигать результатов
+					</h5>
+					<a
+						href="/company.html"
+						class="w-full lg:w-1/2 mt-[25px] lg:mt-[40px] py-[20px] flex items-center justify-center text-black border-2 border-black text-[16px] tracking-[-0.48px]"
+						>Подробнее о компании</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-[100px] lg:mt-[120px] w-full bg-black text-white">
+			<div
+				class="lg:grid xl:px-[60px] lg:gap-[16px] lg:grid-cols-2 px-[10px] sm:px-[20px] lg:px-[12px] pt-[40px] lg:mt-[50px] pb-[50px]"
+			>
+				<h2
+					class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+				>
+					Обсудить <br />
+					сотрудничество
+				</h2>
+				<div>
+					<h5
+						class="mt-[25px] lg:mt-0 sm:mt-[30px] lg:text-[30px] lg:tracking-[-0.9px] sm:text-[20px] sm:tracking-[-0.6px] text-[18px] tracking-[-0.5px] leading-[120%]"
+					>
+						Контактные данные <br />для организации встречи
+					</h5>
+
+					<form
+						action=""
+						id="form"
+						class="mt-[20px] sm:mt-[25px] lg:mt-[40px] sm:grid sm:grid-cols-2 sm:gap-x-[16px] sm:gap-y-[20px] flex flex-col gap-[20px] lg:gap-x-[16px] text-[14px] text-dark_gray tracking-[-0.28px] leading-[110%]"
+					>
+						<input
+							type="text"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Ваше имя*"
+							required
+						/>
+						<input
+							type="text"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Ваша фамилия*"
+							required
+						/>
+						<input
+							type="text"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Контактный телефон*"
+							required
+						/>
+						<input
+							type="email"
+							class="w-full pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Адрес электронной почты*"
+							required
+						/>
+						<textarea
+							rows="1"
+							class="w-full sm:col-span-2 pb-[20px] bg-black outline-none border-b-2 border-solid border-form_lines placeholder:text-form_text"
+							placeholder="Суть вашего обращения*"
+							required
+						></textarea>
+						<div class="flex items-center sm:col-span-2 gap-[10px]">
+							<input
+								type="checkbox"
+								value=""
+								id="checkbox"
+								name="checkbox"
+								class="block accent-form_text w-6 h-6 bg-black border-2 border-form_text"
+							/>
+							<label
+								for="checkbox"
+								class="text-[13px] tracking-[-0.26px] leading-[130%]"
+							>
+								Я согласен на обработку<br class="sm:hidden" />
+								персональных данных</label
+							>
+						</div>
+						<button
+							class="w-full mt-[5px] lg:col-span-2 sm:col-span-1 sm:mt-[20px] py-[20px] flex items-center justify-center text-black bg-yellow border-2 text-[16px] tracking-[-0.48px]"
+						>
+							Отправить заявку
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="xl:mt-[150px] hidden xl:block xl:px-[60px]">
+			<div
+				class="py-[40px] border-y-[1px] border-lines flex items-top justify-between"
+			>
+				<h2
+					class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+				>
+					Вопросы по подбору<br />
+					персонала
+				</h2>
+				<a
+					href="hr@delta-deal.ru"
+					class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+				>
+					hr@delta-deal.ru
+				</a>
+			</div>
+			<div
+				class="py-[40px] border-b-[1px] border-lines flex items-top justify-between"
+			>
+				<h2
+					class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+				>
+					Написать <br />
+					в мессенджеры
+				</h2>
+				<div class="flex flex-col items-end">
+					<a
+						href="https://wa.me/79260108008"
+						class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+					>
+						WhatsApp
+					</a>
+					<a
+						href="https://t.me/+79260108008"
+						class="text-[26px] sm:text-[36px] lg:text-[50px] lg:tracking-[-2.5px] sm:tracking-[-1.8px] tracking-[-1.3px] leading-[110%]"
+					>
+						Telegram
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer
+			class="mt-[100px] xl:px-[60px] lg:mt-[120px] w-full text-black px-[10px] sm:px-[20px] lg:px-[12px]"
+		>
+			<div class="bg-lines w-full h-[1px]"></div>
+			<div class="lg:grid-cols-4 lg:grid lg:mt-[40px] gap-[16px]">
+				<div class="lg:col-span-2">
+					<div
+						class="mt-[30px] lg:mt-0 flex items-center gap-[15px] py-[5px]"
+					>
+						<img src="img/logo.png" alt="logo" class="" />
+						<span class="h-[30px] w-[1px] bg-lines relative"></span>
+						<p
+							class="text-[14px] text-black tracking-[-0.28px] leading-[110%]"
+						>
+							Consulting group
+						</p>
+					</div>
+					<h5
+						class="text-[14px] lg:mt-[30px] lg:text-[16px] lg:tracking-[-0.32px] mt-[25px] text-black tracking-[-0.28px] leading-[110%]"
+					>
+						Россия, 123317, город Москва,<br />
+						Пресненская наб., д. 8, стр. 1, этаж 13
+					</h5>
+				</div>
+				<div
+					class="sm:mt-[30px] lg:mt-0 col-span-2 lg:grid lg:grid-cols-2 lg:gap-[16px] sm:grid sm:grid-cols-2 sm:gap-[20px]"
+				>
+					<div class="mt-[25px] sm:mt-0">
+						<h4
+							class="text-[14px] lg:text-[18px] lg:tracking-[-0.36px] sm:text-[16px] sm:tracking-[-0.32px] tracking-[-0.28px] leading-[120%] font-semibold"
+						>
+							Навигация
+						</h4>
+						<div class="flex flex-col mt-[15px] gap-[10px]">
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>О компании</a
+							>
+							<a
+								href="/hire.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>Карьера</a
+							>
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>Контакты</a
+							>
+							<a
+								href="/company.html"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>Связаться с нами</a
+							>
+						</div>
+					</div>
+					<div class="mt-[25px] sm:mt-0">
+						<h4
+							class="text-[14px] lg:text-[18px] lg:tracking-[-0.36px] sm:text-[16px] sm:tracking-[-0.32px] tracking-[-0.28px] leading-[120%] font-semibold"
+						>
+							Контакты
+						</h4>
+						<div class="flex flex-col mt-[15px] gap-[10px]">
+							<a
+								href="info@delta-deal.ru"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>info@delta-deal.ru</a
+							>
+							<p
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+							>
+								+7 (926) 010-8008
+							</p>
+							<a
+								href="https://t.me/+79260108008
+								"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+							>
+								Telegram
+							</a>
+							<a
+								href="https://wa.me/79260108008"
+								class="text-[14px] lg:text-[16px] lg:tracking-[-0.32px] text-black tracking-[-0.28px] leading-[110%]"
+								>WhatsApp</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-lines w-full h-[1px] mt-[25px] lg:mt-[40px]"></div>
+			<div
+				class="mt-[20px] sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-[20px] sm:gap-y-[15px] lg:gap-x-[16px]"
+			>
+				<div class="lg:col-span-1">
+					<p
+						class="text-dark_gray lg:text-[14px] lg:tracking-[-0.28px] text-[12px] tracking-[-0.24px] leading-[120%]"
+					>
+						ООО “Дельта”. ИНН 9703133385
+					</p>
+					<p
+						class="mt-[5px] lg:text-[14px] lg:tracking-[-0.28px] text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
+					>
+						© Все права защищены. 2023
+					</p>
+				</div>
+				<p
+					class="mt-[15px] lg:text-[14px] lg:tracking-[-0.28px] sm:mt-0 sm:order-3 text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
+				>
+					Политика конфиденциальности
+				</p>
+				<div class="lg:col-start-3">
+					<a
+						href="https://t.me/AlexGudaev"
+						class="mt-[25px] lg:text-[14px] lg:tracking-[-0.28px] sm:mt-0 block text-dark_gray text-[12px] tracking-[-0.24px] leading-[120%]"
+						>Дизайн сайта</a
+					>
+					<a
+						href="https://t.me/lim5good"
+						class="mt-[5px] block text-dark_gray lg:text-[14px] lg:tracking-[-0.28px] text-[12px] tracking-[-0.24px] leading-[120%]"
+					>
+						Разработка сайта</a
+					>
+				</div>
+			</div>
+		</footer>
+		<script>
+			let open = false;
+			let humburger = document.querySelector("#humburger");
+			let close = document.querySelector("#close");
+			let menu = document.querySelector("#menu");
+			let call_menu = document.querySelector("#call_menu");
+			humburger.addEventListener("click", handleMenu);
+			close.addEventListener("click", handleMenu);
+			call_menu.addEventListener("click", handleMenu);
+			function handleMenu(event) {
+				open = !open;
+				if (open) {
+					menu.classList.add("hidden");
+					document.body.style.overflowY = "scroll";
+				} else {
+					menu.classList.remove("hidden");
+					document.body.style.overflow = "hidden";
+				}
+			}
+		</script>
+	</body>
+</html>
